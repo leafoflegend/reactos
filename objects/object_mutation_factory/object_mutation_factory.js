@@ -1,7 +1,7 @@
 let currentObject = null;
 
 /*
-TODO: Make this object pass the tests in './object_mutation_factory.spec.js
+TODO: Make this object pass the tests in './object_mutation_factory.spec.js'
  */
 const objectMutationFactory = {
   /*
