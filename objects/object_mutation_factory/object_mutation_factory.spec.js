@@ -62,4 +62,21 @@ describe('objectMutationFactory', () => {
       [key]: value,
     });
   });
+
+  it('can remove every property from an object', () => {
+    objectMutationFactory.setObject(objectToMutate);
+
+    objectMutationFactory.addProperty('prop one', 1);
+    objectMutationFactory.addProperty('prop two', 2);
+
+    expect(objectToMutate).toEqual({
+      'prop one': 1,
+      'prop two': 2,
+    });
+
+    objectMutationFactory.removeAllProperties();
+
+    expect(objectToMutate).toEqual({});
+    expect(objectToMutate).toBe(objectRefForTest);
+  });
 });

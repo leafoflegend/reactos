@@ -1,8 +1,13 @@
+let currentObject = null;
+
 const objectMutationFactory = {
   setObject: (object) => {
 
   },
   getObject: () => {
+
+  },
+  removeAllProperties: () => {
 
   },
   addProperty: (name, value, options) => {
